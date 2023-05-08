@@ -8,6 +8,7 @@ module.exports = [
   expressjwt({ secret: secretKEY, algorithms: ['HS256'] }).unless({
     path: [
       '/login',
+      '/registuser',
       { url: /^\/avataruploads\/.*/, methods: ['GET'] },
       { url: /^\/videos\/.*/, methods: ['GET'] },
       { url: /^\/imgs\/.*/, methods: ['GET'] }

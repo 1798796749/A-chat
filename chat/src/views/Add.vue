@@ -8,7 +8,7 @@
       <el-form-item label="密码" prop="password">
         <el-input v-model="loginForm.password" type="password" autocomplete="off" />
       </el-form-item>
-      <el-form-item label="确认密码" prop="checkpassword">
+      <el-form-item label="确认" prop="checkpassword">
         <el-input v-model="loginForm.checkpassword" type="password" autocomplete="off" />
       </el-form-item>
       <el-form-item>
@@ -57,11 +57,11 @@ const submitForm = () => {
     if (valid) {
       const res = await registUser({ username: loginForm.username, password: loginForm.password })
       console.log(res);
-      // if (res.data.code === 200) {
-      //   message('success', '注册成功')
-      // } else {
-      //   message('error', '注册失败')
-      // }
+      if (res.data.code === 200) {
+        message('success', '注册成功')
+      } else {
+        message('error', '注册失败')
+      }
     }
   })
 }

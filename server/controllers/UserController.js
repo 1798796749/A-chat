@@ -169,7 +169,7 @@ const UserController = {
   },
   registUser: (req, res) => {
     const { username, password } = req.body
-    const sql = `insert into user (username,password,chatuser,state,gender) values (?,?,?,?,?)`
+    const sql = `insert into user (username,password,chatuser,state,gender) values(?,?,?,?,?)`
     query(sql, [username, password, '[]', 0, 0], (err, results) => {
       if (err) {
         return res.send({ data: 'error', err })

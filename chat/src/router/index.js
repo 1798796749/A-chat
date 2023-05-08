@@ -97,7 +97,7 @@ const router = createRouter({
 router.beforeEach((to, from, next) => {
   const store = useStore()
   showFullLoading()
-  if (to.name === 'Login') {
+  if (to.name === 'Login' || to.name === 'Add') {
     next()
     store.logout()
   } else {

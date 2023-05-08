@@ -10,7 +10,7 @@
       </el-form-item>
       <el-form-item>
         <el-button type="primary" @click="submitForm(loginFormRef)">登录</el-button>
-        <el-button @click="addUserForm(loginFormRef)">注册</el-button>
+        <el-button @click="addUserForm()">注册</el-button>
       </el-form-item>
     </el-form>
   </div>
