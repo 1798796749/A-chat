@@ -23,3 +23,44 @@ vue3-socket-chat
 ├──server  // 服务端项目
 ├──db        // 数据库
 ```
+### 启动项目
+
+#### web端
+
+- 进入web目录
+
+  ```
+  cd chat
+  ```
+
+- 安装依赖
+
+  ```
+  yarn 
+  ```
+
+- 运行项目
+
+  ```
+  yarn dev
+  ```
+
+#### server端
+
+- 进入server目录
+
+  ```
+  cd server
+  ```
+
+- 安装依赖
+
+  ```
+  yarn
+  ```
+
+- 运行项目
+
+  ```
+  npm start
+  ```
